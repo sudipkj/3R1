@@ -5,6 +5,7 @@ function App() {
   return (
     <div>
       <h1>Welcome to React JS</h1>
+<h1>Welcome to React JS</h1>
     <MyClass></MyClass>
     </div>
     
