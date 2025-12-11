@@ -1,18 +1,27 @@
 import  { Component } from "react";
+import ChildComponent from "./ChildComponent";
 
 class MyClass extends Component {
 
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
+        console.log(this.props.name)
         this.state= {
             name : 'Purohit'
     }
 }
     handleClick(){
         console.log('handleclick is called')
-        this.setState({
+        if(this.state.name === 'Purohit'){
+            this.setState({
             name:'Rohit'
         })
+        }else{
+          this.setState({
+            name:'Purohit'
+        })  
+        }
+        
     }
 
     render() {
@@ -20,6 +29,8 @@ class MyClass extends Component {
         return (<div>
                     <p>Student name is {this.state.name}</p>
                     <button onClick={()=>this.handleClick()}>Click to change name</button>
+                    <ChildComponent data = {this.state.name}/>
+                    <p>THis is coming from child :: {this.props.name} </p>
                 </div>
 
                 
