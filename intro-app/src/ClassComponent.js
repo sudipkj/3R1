@@ -1,17 +1,29 @@
-import { Component } from "react";
+import  { Component } from "react";
 
-class MyClass extends Component{
+class MyClass extends Component {
 
-    constructor(){
+    constructor() {
         super();
-    }
-
-    render(){
-
-        return <div>
-            <p>This is para</p>
-        </div>
+        this.state= {
+            name : 'Purohit'
     }
 }
+    handleClick(){
+        console.log('handleclick is called')
+        this.setState({
+            name:'Rohit'
+        })
+    }
+
+    render() {
+
+        return (<div>
+                    <p>Student name is {this.state.name}</p>
+                    <button onClick={()=>this.handleClick()}>Click to change name</button>
+                </div>
+
+                
+            )}
+    }
 
 export default MyClass;
