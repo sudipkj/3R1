@@ -1,5 +1,5 @@
 import './App.css';
-import Parent from './props/Parent.js';
+import AjaxAndFetchApi from './components/AjaxAndFetchApi.jsx';
 
 
 function App() {
@@ -9,7 +9,8 @@ function App() {
     {/* <MyClass></MyClass>
     <LifeCycleComp/> */}
 
-    <Parent/>
+    {/* <Parent/> */}
+    <AjaxAndFetchApi/>
     </div>
     
   );
