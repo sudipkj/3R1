@@ -1,0 +1,25 @@
+.custom{
+    
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    display: flexbox;
+    justify-content: space-around;
+    width: 20%;
+    font-weight: bold;
+    background-color: rgb(160, 91, 145);
+    border-radius: 20px;
+    border-color: aliceblue;
+    
+
+}
+.invisible{
+    color: rgb(201, 193, 193);
+}
+
+.button-group {
+  display: flex; /* Enables flexbox layout */
+  justify-content: space-around; /* Distributes space around items */
+  width: 100%; /* Ensures the container uses full width */
+}
