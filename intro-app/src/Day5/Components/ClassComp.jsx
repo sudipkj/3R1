@@ -1,3 +1,4 @@
+import axios from 'axios'
 import React, { Component } from 'react'
 
 export default class ClassComp extends Component {
@@ -9,18 +10,19 @@ export default class ClassComp extends Component {
     }
   }
 
-  getData() {
-    console.log('Api is called')
-    fetch('https://fakestoreapi.com/products/1')
-      .then(response => response.json())
-      .then(data=>data.title.split(' ')[0])
-      .then(fname => 
-        this.setState({
-        name: fname
-      }))
-      .catch(error => console.log(error))
 
+  getData() {
+    axios.get('https://fakestoreapi.com/products/1')
+      .then(result => {
+        this.setState({
+          name: result.data.title.split(' ')[0]
+
+        })
+      });
+
+    console.log("last line printed")
   }
+
   render() {
     return (
       <div>
