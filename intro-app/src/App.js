@@ -1,5 +1,6 @@
 import './App.css';
 import AjaxAndFetchApi from './components/AjaxAndFetchApi.jsx';
+import ClassComp from './Day5/Components/ClassComp.jsx'
 
 
 function App() {
@@ -10,7 +11,8 @@ function App() {
     <LifeCycleComp/> */}
 
     {/* <Parent/> */}
-    <AjaxAndFetchApi/>
+    {/* <AjaxAndFetchApi/> */}
+    <ClassComp/>
     </div>
     
   );
