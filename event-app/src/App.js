@@ -1,10 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
-import Reducer  from './reducer/Reducer';
+
 import ControlledForm from './Form Validation/ControlledForm';
 import FormEvents from './Events/FormEvents';
 import StateHooks from './Hooks/StateHooks';
 import EffectsHook from './Hooks/EffectsHook';
+import UseRefHook from './Hooks/UseRefHook';
+import UseReducerHook from './Hooks/UseReducerHook';
 
 function App() {
   return (
@@ -13,8 +15,10 @@ function App() {
       {/* <Reducer/> */}
       {/* <ControlledForm/> */}
       {/* <FormEvents/> */}
-      <StateHooks/>
-      <EffectsHook/>
+      {/* <StateHooks/>
+      <EffectsHook/> */}
+      {/* <UseRefHook/> */}
+      <UseReducerHook />
     </div>
   );
 }
