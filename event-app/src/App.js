@@ -7,6 +7,9 @@ import StateHooks from './Hooks/StateHooks';
 import EffectsHook from './Hooks/EffectsHook';
 import UseRefHook from './Hooks/UseRefHook';
 import UseReducerHook from './Hooks/UseReducerHook';
+import {ParentComponent} from './Hooks/UseContextHook/ParentComponent';
+import ChildComponent from './Hooks/UseContextHook/ChildComponent';
+import UseCustomHooks from './Hooks/CustomHooks/UseCustomHooks';
 
 function App() {
   return (
@@ -18,7 +21,10 @@ function App() {
       {/* <StateHooks/>
       <EffectsHook/> */}
       {/* <UseRefHook/> */}
-      <UseReducerHook />
+      {/* <UseReducerHook /> */}
+      <ParentComponent/>
+      <UseCustomHooks/>
+      
     </div>
   );
 }
