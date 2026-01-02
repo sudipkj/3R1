@@ -14,7 +14,7 @@ import UseCustomHooks from './Hooks/CustomHooks/UseCustomHooks';
 function App() {
   return (
     <div className="App">
-      <h2>Welcome to React Event Handling</h2>
+      {/* <h2>Welcome to React Event Handling</h2> */}
       {/* <Reducer/> */}
       {/* <ControlledForm/> */}
       {/* <FormEvents/> */}
@@ -22,8 +22,9 @@ function App() {
       <EffectsHook/> */}
       {/* <UseRefHook/> */}
       {/* <UseReducerHook /> */}
-      <ParentComponent/>
-      <UseCustomHooks/>
+      {/* <ParentComponent/>
+      <UseCustomHooks/> */}
+      <ControlledForm/>
       
     </div>
   );
